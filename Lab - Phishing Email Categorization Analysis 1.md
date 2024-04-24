@@ -10,7 +10,8 @@ What is the category of this email?
 Format: (Spam, `Recon`, Malicious Attachment, Credential Harvester)
 ![](images/20240423200406.png)
 
-This is a recon email. The offender is attempting to garner a reaction from the recipient to possibly gather information to determine if the email is still active or not. This situation can possibly escalate into a full blown social engineering attempt to gain additional information form recipient.
+This is a recon email. The offender is attempting to garner a reaction from the recipient to possibly gather information to determine if the email is still active or not. This situation can possibly escalate into a full blown social engineering attempt to gain additional information from the recipient.
+
 
 
 **Question 2 )**  

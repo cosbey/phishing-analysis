@@ -1,4 +1,7 @@
 
+# Manual Artifact Analysis Process
+
+
 1. **Upload files, attachments and the URL to https://www.virustotal.com/gui/home/upload.** Verify the reputation status of the artifacts.
 - How long has it existed on the internet?
 - What is the HTTP status code?

@@ -20,19 +20,14 @@ b. **Isolation**
 c. **Notification**
 - Notify relevant stakeholders, including IT security team members, incident response team, and affected users.
 - A crucial part of the immediate response to a phishing attack is to *notify any individuals that have received the email*. This helps to reduce the chance of them opening and interacting with the email.
+- Please follow the *Malicious Phishing Email Alert Template* documentation for further instructions.
 
-Typically organizations will have an email template that they can send to recipients once they have been identified. The investigating analyst would check on the email gateway to see which mailboxes the phishing email has been delivered to, and then add the recipients into BCC of the email template, and include the following details:
-
-- **The date and time the email was sent** (allows the recipients to find the email easier by looking at the times of emails that they have received)
-- **The subject line of the malicious email** (allows the recipients to find the email easier by looking at the subject lines of emails that they have received)
-- **Clear instructions on what to do with the email** (this will depend on how the organization deals with phishing emails. This could either be instructing the recipients to delete the email or forward it to a security-owned mailbox)
-- **Contact details for if the recipient is unsure what to do** (typically a security-owned mailbox, so the user can get support from the security team)
 
 
 ## 2. Investigation and Analysis
 
 a. **Artifact Collection**
-- Follow the *Artifact Collection Document* to gather email, web, and file artifacts related to the phishing incident.
+- Follow the *Manual Artifact Collection Document* to gather email, web, and file artifacts related to the phishing incident.
 
 b. **Analysis**
 - Follow the *Manual Artifact Analysis Document* to analyze collected artifacts using appropriate tools and techniques to identify the nature and extent of the phishing attack.`
@@ -44,7 +39,8 @@ c. **Root Cause Analysis**
 
 a. **Email, Web and File Artifacts**
 - Follow the *Taking Defensive Measures - Reactive Process Document* to mitigate and remediate issues in the environment.
-- Block sender addresses and domains associated with the phishing emails.   - Implement email filtering rules to detect and prevent similar phishing emails in the future.`
+- Block sender addresses and domains associated with the phishing emails.   
+- Implement email filtering rules to detect and prevent similar phishing emails in the future.`
 - Block access to malicious URLs identified during the investigation.   
 - Update web filtering policies to prevent users from accessing phishing websites.`
 - Quarantine or delete malicious files identified during the analysis.   

@@ -34,7 +34,7 @@ In your chosen note-taking platform, ensure to attach the email file directly to
 *Analysis Tool Used and Description:* `Document tool used, methods and findings from analysis.`
 
 **Example:** 
-![](images/20240509213204.png)
+![](/images/20240509213204.png)
 
 - Attachment Name: `malicious-filename.exe`
 - Attachment MD5 Hash: `0c4374d72e166f15acdfe44e9398d026`
@@ -42,7 +42,7 @@ In your chosen note-taking platform, ensure to attach the email file directly to
 *Analysis Tool Used and Description:* `Document tool used, methods and findings from analysis.`
 
 **Example:** 
-![](images/20240509213427.png)
+![](/images/20240509213427.png)
 This section of your report demands meticulous attention as it involves evaluating the risk posed by malicious artifacts to the organization. Key inquiries such as determining the malicious nature of URLs or assessing the potential harm of attachments must be addressed, supported by thorough documentation on the analysis techniques and tools utilized. The depth of detail provided here will serve as the foundation for justifying any defensive actions proposed, ensuring that senior analysts can reach the same conclusions as you. 
 
 ## 3. Defensive Measures Taken
@@ -54,7 +54,7 @@ These are additional details of the actions taken to mitigate and remedy the iss
 
 These measures must be documented whether the analyst can conduct the actions themselves or escalated to a senior analyst.
 
-![](20240509213051.png)
+![](/images/20240509213051.png)
 
 ## Note: Sanitize URLs and IP Addresses
 
@@ -63,5 +63,5 @@ The rules for doing this are simple:
 - Surround the “**.**” within URLs and IP addresses with a “**[]**” to become “**[.]**”.
 - Change the “**tt**” to “**xx**” within the **http** of URLs to become “**hxxp**”.
 
-![](images/20240509221738.png)
+![](/images/20240509221738.png)
 

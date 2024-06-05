@@ -5,7 +5,7 @@
 ## 1. Marking External Emails
 - A common way to inform users that an email is external and coming from an outside source from the environment or network is to label it as such. We can set specific rules with platforms such as Microsoft Exchange and Office 365 that allows the subject line to be altered - External Email.
 
-![](images/20240506192421.png)
+![](/images/20240506192421.png)
 
 The same method can be applied to automatically add warning messages to the start of the body content instead of (or as well as) appending the subject line, and styling can be applied such as making the text red so it stands out more, and means the employee is more likely to read it and proceed with caution.
 

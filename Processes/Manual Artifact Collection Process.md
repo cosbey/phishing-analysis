@@ -11,9 +11,9 @@
 
 These can be identified using typical email clients such as Outlook and Thunderbird. Additionally, text editors such as Sublime and Notepad++ can be used to retrieve theses items as well. 
 
-![](images/20240429010627.png)
+![](/images/20240429010627.png)
 
-![](images/20240429010705.png)
+![](/images/20240429010705.png)
 
 
 We can also quickly identify our artifacts using a text editor as shown above. These items were retrieved using Notepad++ and analyzed after downloading the email to an .eml format.
@@ -30,7 +30,7 @@ Also, the sender server IP can be found by searching for "`Received`:". Each "Re
 
 Additionally, searching for the value `Sender` may help identify the IP address of the sender as well.
 
-![](images/20240429210911.png)
+![](/images/20240429210911.png)
 
 
 ## 3. Identify Reverse DNS of Sending Server IP
@@ -39,7 +39,7 @@ Additionally, searching for the value `Sender` may help identify the IP address 
 
 Now that we have the IP, we need to convert the address into a hostname. This can be accomplished by performing a **Reverse DNS Lookup**. Let's use the free online service by Domain Tools – [https://whois.domaintools.com/](https://whois.domaintools.com/). If we input the sending server IP we just received  we can retrieve information about the server.
 
-![](images/20240429211607.png)
+![](/images/20240429211607.png)
 
 
 If the server domain address is much different than the address found in the email. This is an indicator that the domain has been spoofed.
@@ -48,7 +48,7 @@ If the server domain address is much different than the address found in the ema
 
 - **Reply -To address** (where any replies will be sent).
 
-![](images/20240429213003.png)
+![](/images/20240429213003.png)
 
 The address above will receive any replies to this email. Again, this can also be another indicator that something isn't quite right if the reply-to address doesn't match the domain of the sender. 
 
@@ -70,7 +70,7 @@ In a text editor, we can use the CTRL+F keyboard shortcut to enable the “Find�
 
 We’re going to use the first method.
 
-![](images/20240501215446.png)
+![](/images/20240501215446.png)
 
 As you can see, this is a much safer method than interacting with the email client. We can copy the link without the fear of clicking on the link and being taken to a malicious site.
 
@@ -81,7 +81,7 @@ Attachments can be identified in the text editor by searching for `filename` or 
 We need to collect file hashes of malicious attachments to perform reputation checks and implement defensive measures. Hashes are the output of a hashing algorithm, such as MD5 (Message Digest 5) or SHA (Secure Hash Algorithm). These algorithms will produce a unique string that is used to represent the file. If there is a single change to the file, such as editing a text file and changing one character, the hash will be completely different. You can read more about hashes [here](https://www.sentinelone.com/blog/what-is-hash-how-does-it-work/).
 
 
-![](images/20240501222118.png)
+![](/images/20240501222118.png)
 
 The Linux commands are as follows:
 
@@ -91,7 +91,7 @@ The Linux commands are as follows:
 
 Similarly, we can retrieve the MD5 and SHA1 values in Windows PowerShell as well using the `get-filehash` command with the `-Algorithm` switch.
 
-![](images/20240501224038.png)
+![](/images/20240501224038.png)
 
 
 Whilst typically generating MD5 and SHA1 hashes are enough to perform reputation searches online and take defensive measures within endpoint detection and response (EDR) platforms, some services such as Talos File Reputation require SHA256 hashes to perform checks against their databases. It’s useful to know how to generate all three both in Windows and Linux.
